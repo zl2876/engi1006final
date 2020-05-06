@@ -20,6 +20,10 @@ def hello():
 def paperhouse():
     return render_template("index.html")
 
+@app.route("/thoughts")
+def thoughts():
+    return render_template("index2.html")
+
 #start the server
 if __name__ == "__main__":
     app.run()
